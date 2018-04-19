@@ -78,7 +78,7 @@ document.write("120 : 120 = " + sum / multiply);
 
 //Advance Exercise 2. 
 document.write("<hr><h1>Advance Exercise 2.</h1>");
-var selection = [ [1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 25, 7], [21, 4, 6, 17], [3, 5, 26, 3] ]
+var selection = [ [1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 25, 7], [21, 4, 6, 17], [3, 5, 26, 3] ];
 
 document.write(selection[1][1] +  ", " + selection[4][2] +  ", " + selection[5][3] +  ", " + selection[2][3] +  ", " + selection[2][1]);
 
@@ -118,6 +118,19 @@ document.write(vienna1[1]);
 // var vie1 = sentence.search("Vienna");
 // document.write(vieString1);
 
+//Challenge 1. Multidimensional Arrays
+document.write("<hr><h1>Challenge 1. Multidimensional Arrays</h1>");
+var viennaNice = [["Vienna"],["is"], ["a"], ["nice"], ["city"]];
+document.write(viennaNice[0][0]);
+document.write("<p style='margin-left:2em;'>" + viennaNice[1][0] + "</p>");
+document.write("<p style='margin-left:3em;'>" + viennaNice[2][0] + "</p>");
+document.write("<p style='margin-left:4em;'>" + viennaNice[3][0] + "</p>");
+document.write("<p style='margin-left:5em;'>" + viennaNice[4][0] + "</p>");
+
+//Challenge 2. String Manipulation
+document.write("<hr><h1>Challenge 2. String Manipulation</h1>");
+var sentenceChallenge2 = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as\"properties $flow$down;$actions$flow$up\"";
+document.write(sentenceChallenge2.replace(/[$]/g, " "));
 
 
 
@@ -126,6 +139,9 @@ document.write(vienna1[1]);
 
 
 
+
+
+// 
 
 
 
