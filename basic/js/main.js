@@ -1,4 +1,6 @@
 //Basic first excercise
+document.write("<hr><h1>Basic Excercise 1</h1><p>Output in Console</p>");
+
 console.log("Basic Excercise 1");
 console.log("Hello from the Console");
 
