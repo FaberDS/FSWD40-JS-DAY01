@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transition</title>
+    <style>
+    /* ---------------------1. transition width---------------------*/
+   	#width-tr {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+		/*transition-delay: 3s;*//* default value is 0;
+        timer after the transition starts*/
+
+        /*--------------------- different timing functions 
+		linear is default value*/
+		/* For Safari 3.1 to 6.0 */
+		/*#div1 {-webkit-transition-timing-function: linear;}
+		#div2 {-webkit-transition-timing-function: ease;}
+		#div3 {-webkit-transition-timing-function: ease-in;}
+		#div4 {-webkit-transition-timing-function: ease-out;}
+		#div5 {-webkit-transition-timing-function: ease-in-out;}*/
+
+		/* Standard syntax */
+		/*#div1 {transition-timing-function: linear;}
+		#div2 {transition-timing-function: ease;}
+		#div3 {transition-timing-function: ease-in;}
+		#div4 {transition-timing-function: ease-out;}
+		#div5 {transition-timing-function: ease-in-out;}*/
+		
+		/*--------------transition properties seperatly-------------------*/
+			/* For Safari 3.1 to 6.0 */
+	    /*-webkit-transition-property: width;
+	    -webkit-transition-duration: 2s;
+	    -webkit-transition-timing-function: linear;
+	    -webkit-transition-delay: 1s;*/
+	    /* Standard syntax */
+	    /*transition-property: width;
+	    transition-duration: 2s;
+	    transition-timing-function: linear;
+	    transition-delay: 1s;*/
+
+    }
+	
+   	#width-tr:hover {
+        width: 300;
+    }
+    /* ---------------------2. transition width & height---------------------*/
+    #width-height {
+	margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s;
+    transition-delay: 3s;
+}
+
+	#width-height:hover {
+    width: 300px;
+    height: 300px;
+}
+	/* ---------------------. transition rotate---------------------*/
+#rotate-tr {
+	margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#rotate-tr:hover {
+    width: 500px;
+    height: 500px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(90deg);
+}
+
+
+    </style>
+</head>
+	<div id="width-tr"></div>
+	<div id="width-height"></div>
+	<div id="rotate-tr"></div>
+<body>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+nav a, 
+.footerInfo,
+footer{
+	color: white;
+	background-color: grey;
+	text-decoration: none;
+
+}
+
+#copyRight {
+	font-size: larger;
+}

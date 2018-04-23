@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" src="a.js">
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<h1>Wir berechnen dir den günstigsten Tarif für dein AUTO</h1>
+	<form>
+		<div>
+			<label class="year" for="number">Baujahr:</label>
+			<input class="year" id="year" type="text">
+		</div>
+		<div>
+			<label class="ps" for="number">PS:</label>
+			<input class="ps" id="number" type="text">
+		</div>
+		<div>
+			<label class="price" for="number">Preis:</label>
+			<input class="price" id="number" type="text">
+		</div>
+		
+
+    <button type="button" onclick="versicherungsSumme()">Berechne deinen Versicherungsbeitrag</button>
+    </form>
+    <p id="message"></p>
+    <script type="text/javascript">
+ 
+
+function versicherungsSumme() {
+			baujahr = document.getElementById("year").value;
+			ps = document.getElementById("ps").value;
+			preis = document.getElementById("preis").value;
+			message = document.getElementById("message");
+
+            try {
+
+                if(baujahr == "")  throw "Bitte gib das Baujahr ein ";
+
+                if(isNaN(baujahr)) throw "Das ist ein falscher Wert";
+
+                if(baujahr < 1930)   throw "Ich glaube nicht das dein Auto so alt ist";
+
+                if(ps == "")  throw "Bitte gib deine PS ein ";
+
+                if(isNaN(ps)) throw "Das ist ein falscher Wert";
+
+                if(ps < 5)   throw "Ich glaube nicht das dein Auto so wenige PS hat";
+
+                if(ps > 1500)   throw "Ich glaube nicht das dein Auto so viele PS hat";
+
+                if(preis == "")  throw "Bitte gib den Preis ein ";
+
+                if(isNaN(preis)) throw "Das ist ein falscher Wert";
+
+                if(preis < 5)   throw "Ich glaube nicht das dein Auto so günstig war";
+                if(preis > 5000000)   throw "Ich glaube nicht das dein Auto so teuer war";
+            }
+
+            catch(err) {
+
+                message.innerHTML = "Input " + err;
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>

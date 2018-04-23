@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Positioning</title>
+    <style>
+    body>div {
+    	background-color: orange;
+    	margin-top: 10px;
+    	height: 200px;
+    }
+    /* -----------------------------First flex-wrap Setting-----------------------------*/
+    .first {
+        display: flex;
+        flex-wrap: wrap; /*with the value wrap, elements will slide into the next line
+        flex-wrap: wrap-reverse like wrap but turn around the order*/
+    }
+	/*------------------------------flex itmes inherit the default flex properties from the container
+
+		The flex item properties are:
+
+					order
+					flex-grow
+					flex-shrink
+					flex-basis
+					flex
+					align-self
+   	.first div, .second div, .third div, .fourth div, .fifth div, .sixth div, .seventh div, .eighth div{
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    /*-----------------------------second 									nowrap-----------------------------*/
+    .second {
+		display: flex;
+        flex-wrap: nowrap;/*nowrap squeezes the elements in the line*/
+    }
+    /*-----------------------------third 
+   		flex-direction: row; default value-----------------------------*/
+	.third {
+		display: flex;
+        flex-direction: row;/*column place flex itmes along cross axis column-reverse change the order from the last to the first*/
+    }
+     /*-----------------------------fourth 
+     	flex-flow: row wrap; 
+    	shorthand of flex-direction & flex-flow -----------------------------*/
+	.fourth {
+		display: flex;
+        flex-flow: row wrap;/*column place flex itmes along cross axis column-reverse change the order from the last to the first*/
+    }
+
+     /*-----------------------------fifth 
+     	justify-content: place the items along the main axis (horizontel) in the value position -----------------------------*/
+	.fifth {
+		display: flex;
+        justify-content: center;/*place items horizontely in the center*/
+        /*justify-content: flex-start;*//*place items horizontelyat the begin of the container*/
+		/*justify-content: flex-end;*//*place items horizontely at the end of the container*/
+		/*justify-content: space-around;*//*place the items horizontely with space before between and after the items*/
+		/*justify-content: space-between;*//*place the items horizontely with space  between the items*/
+    }
+     /*-----------------------------sixth
+     	align-items: place the items along the Cross Axis axis in the value position -----------------------------*/
+    .sixth {
+    	display: flex;
+    	align-items: center;/*place items verticaly in the center*/
+		/*align-items: flex-start;*//*place items verticaly at the top*/
+		/*align-items: flex-end;*//*place items verticaly on the bottom*/
+		/*align-items: stretch;*//*default value, itmes fill verticaly the container*/
+		/*align-items: baseline;*//* uses different font-size to demonstrate that the items gets aligned by the text baseline:*/
+    }
+     /*-----------------------------seventh 
+     	align-content: place the items along the cross axis (vertical) in the value position -----------------------------*/
+    .seventh {
+    	height: 400px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;/*place the items vertically with space  between the items*/
+		/*align-content: space-around;*//*place the items vertically with space before between and after the items*/
+		/*align-content: flex-start;*//*place items at the top of the container*/
+		/*align-content: flex-end;*//*place items at the bottom of the container*/
+		/*align-content: stretch;*/ /*default value; stretches items to fill the container*/
+    }
+      /*-----------------------------eigth 
+     	perfect centerring-----------------------------*/
+    .eighth {
+   		height: 400px;
+		display: flex;
+		justify-content: center;
+ 		align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+    <div class="second">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+        <div class="third">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+    <div class="fourth">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+        <div class="fifth">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+    <div class="sixth">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+        <div class="seventh">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+    <div class="eighth">
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+        <div class="rectangle-1">1</div>
+        <div class="rectangle-1">2</div>
+        <div class="rectangle-2">3</div>
+        <div class="rectangle-3">4</div>
+        <div class="rectangle-4">5</div>
+        <div class="rectangle-1">6</div>
+    </div>
+</body>
+
+</html>

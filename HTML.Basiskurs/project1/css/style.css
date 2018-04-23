@@ -1,0 +1,243 @@
+
+/** {
+	height: 100%;
+}*/
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
+
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+    z-index: 10;
+}
+nav ul {
+
+    list-style: none;
+    float: right;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    line-height: 80px;
+        color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+nav.black ul li a{
+    color: #fff;
+   
+}
+nav.black .logo{
+	color: white;
+}
+/*.nav {
+	/*position: fixed;*/
+/*	list-style: none;
+	text-align: right;
+	padding: 10px 0 0px 0;
+}*/
+nav.black {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    padding: 10px 100px;
+}
+nav li {
+	display: inline-block;
+	padding-right: 50px;
+
+}
+#logoImg {
+	height: 70px;
+	float: left;
+	margin: 5px 10px 10px 10px;
+	padding: 10px;
+	z-index: -10;
+}
+
+#logoImg:hover{
+	opacity: 0.6;
+}
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 150%;
+}
+nav  li  a:hover{
+	color: #ccc;
+
+}
+nav.black  li > a:hover{
+	color: #aaa;
+
+}
+.img-container{
+	top:30px;
+	margin-top: 20px;
+	background-image: url('../img/head.png');
+	height: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.img-container .inner-container {
+	color: #fff;
+	width: 100%;
+	text-align: left;
+	height: auto;
+	margin-top: 50px;
+	padding-left: 20px;
+
+}
+.inner-container h1 {
+	font-size: 8em;
+}
+.inner-container h1:hover {
+	color:#d45050;
+	opacity: 0.7;
+}
+.banner > .bannerImg {
+	width: 100%;
+	display: block;
+}
+.content {
+    margin-top: 80px;
+}
+
+.content p {
+    width: 70%;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+footer {
+	bottom: 3%;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+
+}
+
+footer a {
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+		display: inline;
+}
+footer a p {
+	display: inline;
+}
+.cont {
+	margin-top: 20px;
+	text-align: center;
+		    width: 70%;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+.cont li{
+
+	list-style: none;
+	    width: 70%;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    border: 2px solid ;
+}
+.cont li h1 {
+	text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+	nav li {
+	
+	padding-right: 25px;
+
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+	ul {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	#logoImg {
+		height: 55px;
+		text-align: center;
+		position: relative;
+		float: none;
+		margin-right: 60px;
+		margin-bottom: -10px;
+		margin-top: -30px;
+	}
+	nav  {
+		display: block;
+		position: relative;
+		text-align: center;
+	}
+	nav  a{
+		font-size: 120%;
+	}
+	nav li {
+		display: block;
+		text-align: center;
+	}
+	.inner-container h1{
+		font-size: 5em;
+	}
+
+}
+
+@media only screen and (max-width: 540px) {
+	
+	ul {
+		width: 100%;
+		margin-bottom: -40px;
+	}
+	 ul li {
+		display: block;
+		text-align: center;
+	}
+	nav.black ul li {
+		display: block;
+		text-align: center;
+	}
+	#logoImg {
+		
+		height: 40px;
+		margin-right: 60px;
+		margin-bottom: -10px;
+		margin-top: -30px;
+	
+	}
+
+	.inner-container h1{
+		font-size: 3em;
+
+
+	}
+	nav  a{
+		font-size: 90%;
+	}
+	
+}

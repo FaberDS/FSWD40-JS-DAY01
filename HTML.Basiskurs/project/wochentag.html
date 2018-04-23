@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function wochenTag(){
+			var today = new Date();
+			var tag = today.getDay();
+			console.log(tag);
+
+
+			switch (tag) {
+				case 1: document.write("Monday");
+				break;
+
+				case 2: document.write("Thuesday");
+				break;
+				
+				case 3: document.write("Whensday");
+				break;
+				
+				case 4: document.write("Thuersday");
+				break;
+				
+				case 5: document.write("Freiday");
+				break;
+				
+				case 6: document.write("Saturday");
+				break;
+				
+				case 0: document.write("Sundays");
+				break;
+				
+				default: document.write("falscher Tag");
+				break;
+				
+			}
+		}
+
+	</script>
+
+</body>
+</html>

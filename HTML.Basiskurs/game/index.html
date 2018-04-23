@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="script/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<h1>Herzlich willkommen</h1>
+		<img id="logo" src="img/logo.jpg">
+		<div class="credit">
+			<h2>Du hast noch</h2>
+			<h2 id="counterBenutzer"></h2>
+		</div>
+	</header>
+	<div class="gameContent" id="firstPage">
+		<h4>Du hast dich für die richtige Glückspielseite entschieden</h4>
+		<label>Gib hier deinen Namen ein</label>
+		<input id="benutzername" type="text">
+		<button type="button" onclick="controlName()">Bestättigen</button>
+	</div>
+	<div class="gameContent" id="secondPage">
+		<h4>Las uns Starten Würfeln wir</h4>
+		<button type="button" onclick="wurf()"><img src="img/cube.jpg"></button>
+	</div>
+	<div class="gameContent" id="thirdPage">
+		<h4>Du hast es geschafft </h4><h4>Credits zu erkämpfen Zeit für Runde 2</h4>
+		<img src="img/cube.jpg">
+		<img src="img/cube.jpg">
+		<button type="button" onclick="wurfZwei()">Versuch dein Glück</button>
+
+	</div>
+	<div id="gameOver">
+		<h1>Verdammt diesmal hast du verloren aber das nächste Mal wird es bestimmt besser für dich laufen</h1>
+		<button type="button" onclick="restart()">Noch ein Versuch?</button>
+	</div>
+</body>
+</html>
